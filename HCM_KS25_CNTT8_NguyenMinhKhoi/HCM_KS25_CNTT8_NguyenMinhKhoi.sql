@@ -46,6 +46,14 @@ SELECT * FROM shopmanager.products;
 SELECT product_id, product_name, price, stock, category_id FROM products
 WHERE stock > 15;
 
+SELECT product_id, product_name, price, stock, category_id FROM products
+WHERE price > 1000000 && price < 25000000;
+
+SELECT product_id, product_name, price, stock, category_id FROM products
+WHERE NOT product_name = "iPhone 15" && stock > 0;
+
+SELECT product_id, product_name, price, stock, category_id FROM products
+WHERE category_id = 1 && price > 500000;
         
 DROP DATABASE shopmanager;
         
